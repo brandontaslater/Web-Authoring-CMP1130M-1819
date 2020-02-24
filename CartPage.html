@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="Css/CartPage.css" media="screen" type="text/css" />
+		<link href="Css/myStyles.css" rel="stylesheet" type="text/css" />
+		<link href="Css/BlackButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="JavaScript/jquery.shop.js"></script>
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<title>Basket</title>
+	</head>
+
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindvi" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindviactive" href="CartPage.html">Basket</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+	<br>
+	<!This controls the summary title>
+	<div id="Summary">
+		<h1>Basket</h1>
+	</div>
+	<div id="site">
+		<div id="content">
+			<h1>Your Shopping Cart</h1>
+			<form id="shopping-cart" action="CartPage.html" method="post">
+				<table class="shopping-cart">
+				  <thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Qty</th>
+						<th scope="col" colspan="2">Price</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  </tbody>
+				</table>
+				<p id="sub-total">
+					<strong>Sub Total</strong>: <span id="stotal"></span>
+				</p>
+				<ul id="shopping-cart-actions">
+					<li>
+						<input  type="submit" name="update" id="update-cart" class='BlackButton' value="Update Cart" />
+					</li>
+					<li>
+						<input  type="submit" name="delete" id="empty-cart" class='BlackButton' value="Empty Cart" />
+					</li>
+					<li>
+						<a href="ProductsPage.html" class='BlackButton'>Continue Shopping</a>
+					</li>
+					<li>
+						<a href=":email@address.com" value="Send Order" onclick="displayFormContents(this.form);return false;" class='BlackButton'>Buy Basket</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	
+		<script>rotateAnimation("img1",30);</script>
+	</body>
+</html>	

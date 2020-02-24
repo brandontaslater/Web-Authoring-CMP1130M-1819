@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/ProductsPage.css" media="screen" type="text/css" />
+		<link href="Css/myStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="JavaScript/jquery.shop.js"></script>
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<title>Product</title>
+	</head>
+
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindvi" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindviactive" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CartPage.html">Basket</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+		<br>
+		<!This controls the summary title>
+		<div id="Summary">
+			<h1>PRODUCTS</h1>
+		</div>
+		<div id="site">
+			<div id="content">
+				<div id="products">
+					<ul>
+						<li>
+							<div class="product-description" data-name="M.O.T" data-price="35">
+								<h3 class="product-name">M.O.T</h3>
+								<p class="product-price">&pound; 35</p>
+								<form class="add-to-cart">
+									<div>
+										<label for="qty-1">Quantity</label>
+										<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+						
+						<li>
+							<div class="product-description" data-name="Wheel Alignment" data-price="30">
+								<h3 class="product-name">Wheel Alignment</h3>
+								<p class="product-price">&pound; 30</p>
+								<form class="add-to-cart">
+									<div>
+										<label for="qty-2">Quantity</label>
+										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+						
+						<li>
+							<div class="product-description" data-name="Exhaust Check" data-price="25">
+								<h3 class="product-name">Exhaust Check</h3>
+								<p class="product-price">&pound; 25</p>
+								<form class="add-to-cart">
+									<div>
+										<label for="qty-3">Quantity</label>
+										<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+									</div>
+									<p><input type="submit" value="Add to cart" class="btn" /></p>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>rotateAnimation("img1",30);</script>
+	</body>
+</html>	

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link href="Css/myStyles.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+	
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<script type="text/javascript" src="JavaScript/map.js"></script>
+		<title>Location&DeliveriesPage</title>
+	</head>
+
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindvi" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindviactive" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CartPage.html">Basket</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+		<!This controls the summary title>
+		<div id="Summary">
+			<h1>Location and Deliveries</h1>
+		</div>
+		<!controls the middle section of the website>
+		<div id="midwrapper">
+			<div class="center">
+				<h3>My Google Maps Demo</h3>
+				<div id="map"></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.32194712341!2d-0.29580748385141453!3d52.978611079903594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487813f4f70f1c7b%3A0x71423f9eaebf19d8!2sSleaford+Building+Services!5e0!3m2!1sen!2suk!4v1483637880287" id = "MapClass"></iframe>
+			</div>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class="LocaDeliv">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2>Contact us</h2>
+				<p>Customer Serice:</p>
+				<p>Brandon Slater</p>
+				<p>Email: Brandon_Business@outlook.co.uk</p>
+				<p>Phone Number: 07543749874</p>
+				<p>Postal Address: POBOX - 458937C</p>
+			</section>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class="LocaDeliv">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2>Delivery Times</h2>
+				<p>1st class Delivery</p>
+				<p>2nd class Delivery</p>
+				<p>Royal Mail Signed For 1st class Delivery</p>
+				<p>Royal Mail Signed For 1st class Delivery</p>
+				<p>Royal MAil special Delivery Guaranteed</p>
+			</section>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<script>rotateAnimation("img1",30);</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzCVu5D_L0VGFLs9gf61BvtY_M7Qj70LE&callback=initMap">
+		</script>
+	</body>
+</html>

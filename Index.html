@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link href="Css/myStyles.css" rel="stylesheet" type="text/css" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<title>
+		HomePage
+		</title>
+	</head>
+
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindviactive" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CartPage.html">Basket</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Demo.html">Demo</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+		
+		<br>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class = "center">
+					<img src="Images/image1.jpg" class = "imageslider" alt="">
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class = "center">
+					<img src="Images/image2.jpg" class = "imageslider" alt="">
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class = "center">
+					<img src="Images/image3.jpg" class = "imageslider" alt="">
+				</div>
+			</div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+		</div>
+		<br>
+
+		<div class ="center">
+		
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		  
+		</div>
+		<link href="Css/ImageSlider.css" rel="stylesheet" type="text/css" />
+		<!controls the middle section of the website>
+		<div id="midwrapper">
+			<br>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class ="curvedboxs">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2>Warranty</h2>
+				<p>Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter </p>
+			<a href="CurrentOffersPage.html"><p>Click to Read More</p></a>
+			</section>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class="curvedboxs">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2>Technology</h2>
+				<p>Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter </p>
+				<a href="TechnologyPage.html"><p>Click to Read More</p></a>
+			</section>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class="curvedboxs">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2> Nearest Center</h2>
+				<p>Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter </p>
+				<a href="Location&DeliveriesPage.html"><p>Click to Read More</p></a>
+			</section>
+			<!Controls the Curved boxes in the midwrapper>
+			<section class="curvedboxs">
+				<img src="Images/Design02-icon-big-hand.png" alt="">
+				<h2>New Cars</h2>
+				<p>Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter Information Enter </p>
+				<a href="CarsPage.html"><p>Click to Read More</p></a>
+			</section>
+		</div>
+		<br>
+		<br>
+		<br>
+		<script>rotateAnimation("img1",30);</script>
+		<script type="text/javascript" src="JavaScript/GallerySlider.js"></script>
+		
+	</body>
+</html>

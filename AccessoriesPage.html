@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+		<link rel="stylesheet" type="text/css" href="Css/myStyles.css"/>
+		<link href="Css/whiteButtonColours.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="Css/style.css">
+		<link rel="stylesheet" type="text/css" href="Css/AccessoriesPage.css">
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<script type="text/javascript" src="JavaScript/main.js"></script>
+		<title>Products</title>
+	</head>
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindvi" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindviactive" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CartPage.html">Basket</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+		<!This controls the summary title>
+		<div id="Summary">
+			<h1> 
+			Ford Brand Alloys 
+			</h1>
+		</div>
+		
+		<ul class="products">
+			<li>
+				<a href="#" class="item">
+					<img src="images/Alloys/Image1.jpg" class ="AccessImages" alt=""/>
+					<div class="priceHolder">
+						<p class="title" data="126.09">Ford A-Max Alloy Wheel 15''</p>
+						<p>Price: £126.09</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="item">
+					<img src="images/Alloys/Image2.jpg" class ="AccessImages" alt=""/>
+					<div class="priceHolder">
+						<p class="title" data="126.09">Ford B-Max Alloy Wheel 15''</p>
+						<p>Price: £126.09</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="item">
+					<img src="images/Alloys/Image3.jpg" class ="AccessImages" alt=""/>
+					<div class="priceHolder">
+						<p class="title" data="144.29">Ford C-Max Alloy Wheel 16''</p>
+						<p>Price: £144.29</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="item">
+					<img src="images/Alloys/Image4.jpg" class ="AccessImages" alt=""/>
+					<div class="priceHolder">
+						<p class="title" data="162.91">Ford D-Max Alloy Wheel 17''</p>
+						<p>Price: £162.91</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="cart">
+			<h1 id = "sctitle">Shopping Cart</h1>
+			<div style="background: black">
+			<table id="cartcontent" fitColumns="true" id ="shoppingCartTable">
+				<thead>
+					<tr>
+						<th field="name" width=140>Name</th>
+						<th field="quantity" width=60 align="right">Quantity</th>
+						<th field="price" width=60 align="right">Price</th>
+					</tr>
+				</thead>
+			</table>
+			<ul id="shopping-cart-actions">
+					
+			</div>
+			<p class="total">Total: £0</p>
+			<h2>Drop here to add to cart</h2>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<ul>
+				<a href="mailto:email@address.com" value="Send Order" onclick="displayFormContents(this.form);return false;" class='WhiteButton'>Buy Basket</a>	
+			</ul>
+		</div>
+		<script>rotateAnimation("img1",30);</script>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<! define all my CSS, JS and Libaries>
+		<meta charset="UTF-8">
+		<link href="Css/myStyles.css" rel="stylesheet" type="text/css" />
+		<link href="Css/RedButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href="Css/BlackButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href="Css/BlueButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href="Css/SilverButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href="Css/WhiteButtonColours.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="JavaScript/ImageRotator.js"></script>
+		<script type="text/javascript" src="JavaScript/ImageSlider.js"></script>
+		<title>Gallery</title>
+	</head>
+
+	<body>
+		<!Topwrapper controls the toolbar at the top of every page>
+		<div id="topwrapper">	
+			<br>
+			<header>
+				<img id="img1" src="Images/GlowBackground.6.png" alt="">
+				<!This controls the indiviual tool bar elements>
+				<ul id="header">
+					<li>
+						<a class= "TBindvi" href="Index.html">Home</a>
+					</li>
+					<li>
+						<a class= "TBindviactive" href="CarsPage.html">Cars</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="TechnologyPage.html">Technology</a>
+						</li>
+					<li>
+						<a class= "TBindvi" href="ServicesPage.html">Services</a></li>
+					<li>
+						<a class= "TBindvi" href="CurrentOffersPage.html">Current Offers</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="Location&DeliveriesPage.html">Location & Deliveries</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="ProductsPage.html">Products</a>
+					</li>
+					<li>
+						<a class= "TBindvi" href="CartPage.html">Basket</a>
+					</li>
+				</ul>
+				<!This controls the business name>
+				<h1 id = "title">TOP CARS</h1>
+			</header>
+		</div>
+		
+		<br>
+		<link href="Css/ImageSlider.css" rel="stylesheet" type="text/css" />
+		<!This controls the summary title>
+		<div id="Summary">
+			<h1>Ford Focus ST</h1>
+			
+		</div>
+		<!controls the sub tool bar on cars pages>
+		<div>	
+			<ul id="header">
+				<li><a class= "TBindvi" href="FordFocusSTPage.html">Change Colour</a></li>
+				<li><a class= "TBindviactive" href="FordFocusSTGalleryPage.html">Gallery</a></li>
+				<li><a class= "TBindvi" href="FordFocusSTFeaturesPage.html">Features</a></li>
+			</ul>	
+		</div>
+		<!This controls the automatic slideshow>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="Images/Colours/FocusST/RED.png" class = "slideshowImage" id= "image1" alt="">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+		</div>
+		<br>	
+		<br>
+		<script>rotateAnimation("img1",30);</script>
+		<script>
+		</script>
+	</body>
+</html>
